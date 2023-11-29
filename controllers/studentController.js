@@ -81,7 +81,7 @@ exports.updateStudent = async(req,res)=>{
         html: req.body.score?.html !== undefined && req.body.score?.html !== '' ? req.body.score.html : 0,
         javascript: req.body.score?.javascript !== undefined ? req.body.score.javascript : 0,
         css: req.body.score?.css !== undefined && req.body.score?.css !== '' ? req.body.score.css : 0,
-        node: req.body.score?.css !== undefined && req.body.score?.css !== '' ? req.body.score.css : 0,
+        node: req.body.score?.node !== undefined && req.body.score?.node !== '' ? req.body.score.node : 0,
     };
 
     //check for entity and replace with existing data
